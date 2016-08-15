@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ekonomi - Brf Sydgården</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div class="brf">
+        <div class="navigation-bar">
+        <h1 onclick="location.href='start.html'">Brf Sydgården</h1>
+            <div class="nav">
+                <a href="foreningen.html">Föreningen</a>
+                <a href="fastigheten.html">Fastigheten</a>
+                <a href="hans-westman.html">Hans Westman</a>
+                <a href="ekonomi.html" class="active">Ekonomi</a>
+                <a href="styrelsen.html">Styrelsen</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <h2>Ekonomi</h2>
+                <p>Brf. Sydgården har, trots renoveringar under 90-talet, en mycket god ekonomi. Nedan finns våra årsredovisningar att ladda ned i pdf-format.</p>
+                <h3>Årsredovisningar</h3>
+                <h3>Stadgar</h3>
+            </div>            
+            <div class="side-pane">
+                <img src="images/foto1.jpeg" className="" alt="Sydgården" />
+                <div class="contact">
+                    <span class="side-pane-title">Kontakt</span>
+                    <ul>
+                        <li>Norbergsgatan 5</li>
+                        <li>22354 Lund</li>
+                        <li><a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a></li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 55.69660, lng: 13.19442},
+            zoom: 17
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRhj289Wi7Zk00wbI0a_WAjufAjL3cnik&callback=initMap">
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Föreningen - Brf Sydgården</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div class="brf">
+        <div class="navigation-bar">
+        <h1 onclick="location.href='start.html'">Brf Sydgården</h1>
+            <div class="nav">
+                <a href="foreningen.html" class="active">Föreningen</a>
+                <a href="fastigheten.html">Fastigheten</a>
+                <a href="hans-westman.html">Hans Westman</a>
+                <a href="ekonomi.html">Ekonomi</a>
+                <a href="styrelsen.html">Styrelsen</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <h2>Föreningen</h2>
+            
+                <p>Den privata bostadsrättsföreningen Sydgården finns på Norbergsgatan 5 i södra delen av Lunds centrum. Miljön är lugn, både vad gäller trafik och uteliv trots att Lunds affärscentrum ligger på bekvämt gångavstånd. För rekreation finns Stadsparken bara ett par hundra meter bort.</p>
+                
+                <img class="pic" src="images/house2.jpg" alt="Fastighet" title="Fastighet"/>
+                
+                <p>Det bor för närvarande cirka 60 personer i huset och medelåldern ligger på omkring 30 år.</p>
+
+                <p>Föreningen omfattar 40 lägenheter uppdelat på tre trappuppgångar och fyra våningar. Det finns 1:or, 2:or och 4:or i huset. I den låga månadsavgiften ingår bland annat el och fast (10 Mbps) internetuppkoppling (delad).</p>
+
+                <p>I källaren finns en gemensam tvättstuga med tvättmaskiner och torktumlare. Det finns två torkrum med värmefläkt och avfuktare. Tider bokas på en bokningstavla. På gården avfallssorterar vi f.n. brännbara sopor, papper, papp och glas.</p>
+
+                <p>På baksidan av huset finns ett cykelgarage med plats för ett 20-tal cyklar. I huset finns även fyra garage som hyrs ut. När ett garage blir ledigt tillfrågas de boende i turordning efter antal år de bott i föreningen.</p>
+
+                <p>Föreningens trädgård i öster har två härliga uteplatser med bekväma trädgårdsmöbler och stengrill samt Webergrill. De vackra rabatternas växter följer årstiderna och vår-sommar-höst är det alltid någonting som blommar. Det brukar finnas gott om vinbär på buskarna och äppelträden bär rikligt med frukt.</p>
+
+                <p>Två gånger om året har vi städdag i föreningen då alla hjälps åt att fixa lite olika saker, städning och målning till exempel. Därefter bjuder styrelsen på lunch och alla kan lära känna varandra.</p>
+
+                <p>Föreningen är ansluten till Sveriges Bostadsrätters Centralorganisation, SBC, och av dem får vi får hjälp med t.ex. juridik, leverantörskontrakt och byggnadsteknik. Vår ekonomiska förvaltning sköts av SBC sedan 2011-01-01.</p>
+
+            </div>            
+            <div class="side-pane">
+                <img src="images/foto1.jpeg" className="" alt="Sydgården" />
+                <div class="contact">
+                    <span class="side-pane-title">Kontakt</span>
+                    <ul>
+                        <li>Norbergsgatan 5</li>
+                        <li>22354 Lund</li>
+                        <li><a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a></li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 55.69660, lng: 13.19442},
+            zoom: 17
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRhj289Wi7Zk00wbI0a_WAjufAjL3cnik&callback=initMap">
+</script>
+</body>
+</html>

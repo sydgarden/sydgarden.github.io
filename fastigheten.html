@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fastigheten - Brf Sydgården</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div class="brf">
+        <div class="navigation-bar">
+        <h1 onclick="location.href='start.html'">Brf Sydgården</h1>
+            <div class="nav">
+                <a href="foreningen.html">Föreningen</a>
+                <a href="fastigheten.html" class="active">Fastigheten</a>
+                <a href="hans-westman.html">Hans Westman</a>
+                <a href="ekonomi.html">Ekonomi</a>
+                <a href="styrelsen.html">Styrelsen</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <h2>Fastigheten</h2>
+
+                <p>Huset är ritat i funkisstil av lundaarkitekten Hans Westman och byggdes 1939 av Nils "Tatis" Andersson. Byggnaden klassas av kommunens bevarandekommitté som kulturhistoriskt värdefull, vilket gör det extra viktigt för föreningen att värna om funkisstilen. Trapphusen pryds av unika och mycket fina målade geometriska ornament och dessutom är dörrarna ådringsmålade.</p>
+                
+                <img class="pic" src="images/stairs3.jpg" alt="Trapphus" title="Trapphus"/>
+                
+                <h3>Renoveringar</h3>
+
+                <p>Under de senaste åren har omfattande renoveringar gjorts av fastigheten. Bland de mindre synliga jobben kan nämnas fjärrvärmeanslutning 1988, renovering och Schädlerbehandling av spiskanalerna 1992, samt byte av vatten- och avloppsledningar.</p>
+
+                <p>Den stora renoveringen av tak, fasader och balkonger skedde 1993.</p>
+
+                <p>Trädgården designades av trädgårdsarkitekten Christina Ilminge och cykelskjul och staket byggdes 1994.</p>
+
+                <p>1997 och 1998 gjordes el och telefonomläggning, samtidigt passade vi på att dra datornätverk i huset. Vi förbättrade även säkerheten genom att installera lås av typen "KABA Titan" i hela fastigheten.</p>
+
+                <p>2010 bytes ut samtliga lägenhetsdörrar i fastigheten mot säkerhetsdörrar (Daloc). Vi passade även på att byta ut brevinkasten mot postboxar.</p>
+
+                <p>2013 installerades en ny fjärrvärmecentral.</p>
+            </div>            
+            <div class="side-pane">
+                <img src="images/foto1.jpeg" className="" alt="Sydgården" />
+                <div class="contact">
+                    <span class="side-pane-title">Kontakt</span>
+                    <ul>
+                        <li>Norbergsgatan 5</li>
+                        <li>22354 Lund</li>
+                        <li><a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a></li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 55.69660, lng: 13.19442},
+            zoom: 17
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRhj289Wi7Zk00wbI0a_WAjufAjL3cnik&callback=initMap">
+</script>
+</body>
+</html>

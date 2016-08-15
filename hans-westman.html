@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hans Westman - Brf Sydgården</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div class="brf">
+        <div class="navigation-bar">
+        <h1 onclick="location.href='start.html'">Brf Sydgården</h1>
+            <div class="nav">
+                <a href="foreningen.html">Föreningen</a>
+                <a href="fastigheten.html">Fastigheten</a>
+                <a href="hans-westman.html" class="active">Hans Westman</a>
+                <a href="ekonomi.html">Ekonomi</a>
+                <a href="styrelsen.html">Styrelsen</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <h2>Arkitekt Hans Westman</h2>
+                <p>Hans Westman levde mellan 1905-1991. Han var en känd skånsk arkitekt med kontor i Lund. Westman föddes och växte upp i Roslagen men eftersom hans far var ifrån Skåne så var det honom inte främmande att komma till Skåne efter arkitektexamen. Westman var produktiv som arkitekt från 1930-1980-talet. Han har ritat allt ifrån stall till kyrkor!
+                </p>
+                <h3>Historia</h3>
+                <p>Westman läste till arkitekt på Kungliga Tekniska Högskolan i Stockholm 1925-1929. Eftersom funktionalismen fick sitt genombrott 1926-1927 i Sverige så påverkade dessa nya strömningar blivande arkitekter. Det syns tydligt att de hus Westman ritade på 1930-talet är funkishus; de har t.ex. platta tak och putsade fasader. Efter 1940 luckrades Westmans funktionalistiska stil upp och blev mer och mer regionalt anpassad. 
+                </p>
+                 
+                <p>Efter att ha gjort sin praktikperiod kom Westman till Skåne 1932. Han började som stadsplanearkitekt i Malmö. 1935 började Westman få egna uppdrag efter all den uppmärksamhet projektet att rita Lunds badhus (revs 1978) tillsammans med Tor Andersson medförde. Westmans verksamhet har varit förlagd till eget kontor 1936-1983 och 1938 flyttades verksamheten till Lund. 1939-1940 färdigställdes den egenritade villan på Nationsgatan 3 i Lund dit Westman också flyttade sitt kontor. 
+                </p>
+                
+                <p>I början ritade Westman mest bostadshus, både flerbostadshus och villor. De mer statusfyllda, offentliga uppgifterna hägrade dock, eftersom de medgav större konstnärlig frihet.
+                Kända verk, byggår inom parantes</p>
+            
+                <p>Bland Hans Westman mest kända flerbostadshus i Lund finns förutom Norbergsgatan 5 (1939) även Vintergatan 2 (1949-52). </p>
+            
+                <p>Både den egna villan på Nationsgatan 3 (1939) samt Villa Wiwen Nilsson, Olshögsvägen 14 (1938) är än idag välkända och speciella hus i Lund. </p>
+        
+                <p>Även bland studentbostäderna har Hans Westman satt sina tydliga spår. Tomegapsgården (1950-51) och den spektakulära Parantesen (1962) bär hans signum.</p>
+            
+                <img class="pic" src="images/parantes.jpg" alt="Parantesen" title="Parantesen"/>
+                <hr>
+                <p>Sidan är ursprungligen skriven av Ingela Agert. Källa: Tomas Tägil, Arkitekten Hans Westman - funktionalismen och den regionala särarten, 1996. Mer information om Hans Westman finns i Lunds Stadsbiblioteks Lundasamling i Ekska Huset. Foto från AF Bostäder.</p>
+            </div>            
+            <div class="side-pane">
+                <img src="images/foto1.jpeg" className="" alt="Sydgården" />
+                <div class="contact">
+                    <span class="side-pane-title">Kontakt</span>
+                    <ul>
+                        <li>Norbergsgatan 5</li>
+                        <li>22354 Lund</li>
+                        <li><a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a></li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 55.69660, lng: 13.19442},
+            zoom: 17
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRhj289Wi7Zk00wbI0a_WAjufAjL3cnik&callback=initMap">
+</script>
+</body>
+</html>

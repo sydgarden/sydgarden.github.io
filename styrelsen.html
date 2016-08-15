@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Styrelsen - Brf Sydgården</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div class="brf">
+        <div class="navigation-bar">
+        <h1 onclick="location.href='start.html'">Brf Sydgården</h1>
+            <div class="nav">
+                <a href="foreningen.html">Föreningen</a>
+                <a href="fastigheten.html">Fastigheten</a>
+                <a href="hans-westman.html">Hans Westman</a>
+                <a href="ekonomi.html">Ekonomi</a>
+                <a href="styrelsen.html" class="active">Styrelsen</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="page">
+                <h2>Styrelsen för Brf. Sydgården 2014</h2>
+                <p>Styrelsen väljs på två år vid föreningsstämma och skall vara mellan 5 och 8 personer. Styrelsen brukar träffas en gång i månaden och arbetar hårt för att få en så trivsam förening som möjligt.<br>
+                Kontakta oss på: <a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a><br>
+                <br>Själva trappstädningen sköts dock av inhyrd personal en gång i veckan.</p>
+                <hr>
+            
+                <!--- Lista över medlemmarna i styrelsen -->    
+                <ul class="commitee">
+                    <li>
+                        <ul>
+                            <li><h3>Malin Rundgren</h3></li>
+                            <li>Ordförande</li>
+                            <li>Norbergsgatan 5C</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Karin Bengtsson</h3></li>
+                            <li>Sekreterare</li>
+                            <li>Norbergsgatan 5C</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Alexander Gårdemyr</h3></li>
+                            <li>Kassör</li>
+                            <li>Norbergsgatan 5A</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <ul>
+                            <li><h3>Per Auster</h3></li>
+                            <li>Ledamot</li>
+                            <li>Norbergsgatan 5C</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Elise Ellerstedt</h3></li>
+                            <li>Ledamot</li>
+                            <li>Norbergsgatan 5B</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Janos Bardis</h3></li>
+                            <li>Suppleant</li>
+                            <li>Norbergsgatan 5B</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Erik Karlsson</h3></li>
+                            <li>Suppleant</li>
+                            <li>Norbergsgatan 5A</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><h3>Karolina Ingvarsson</h3></li>
+                            <li>Suppleant</li>
+                            <li>Norbergsgatan 5C</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>            
+            <div class="side-pane">
+                <img src="images/foto1.jpeg" className="" alt="Sydgården" />
+                <div class="contact">
+                    <span class="side-pane-title">Kontakt</span>
+                    <ul>
+                        <li>Norbergsgatan 5</li>
+                        <li>22354 Lund</li>
+                        <li><a href="mailto:styrelsen@sydgarden.m.se">styrelsen@sydgarden.m.se</a></li>
+                    </ul>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 55.69660, lng: 13.19442},
+            zoom: 17
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRhj289Wi7Zk00wbI0a_WAjufAjL3cnik&callback=initMap">
+</script>
+</body>
+</html>
