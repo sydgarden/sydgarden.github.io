@@ -51,6 +51,18 @@
   list-style-type: none;
   padding: 10px 0;
 }
+.page .annual-statement {
+  list-style-type: none;
+  margin: 5px 0 20px;
+  padding: 0;
+}
+.page .annual-statement li {
+  display: inline;
+}
+.page .by-laws {
+  display: block;
+  margin: 5px 0 20px;
+}
 .side-pane {
   width: 30%;
   min-height: 100%;
